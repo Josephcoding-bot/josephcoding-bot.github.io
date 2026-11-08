@@ -45,8 +45,11 @@
             <span class="nav-line" aria-hidden="true"></span>
             Projects
           </a>
-
-          <a href="#contact" class="nav-link">
+          <a href="#tech-stack" class="nav-link">
+              <span class="nav-line" aria-hidden="true"></span>
+              Tech Stack
+            </a>
+            <a href="#contact" class="nav-link">
             <span class="nav-line" aria-hidden="true"></span>
             Contact
           </a>
@@ -228,6 +231,71 @@
     </ul>
   </article>
 
+  <!-- Smart Drawer Lock -->
+<article class="card">
+  <p class="eyebrow">ARDUINO PROJECT</p>
+  <h3>Smart Drawer Lock</h3>
+
+  <div class="project-gallery drawer-gallery">
+    <a
+      href="assets/rfid1.jpg"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img
+        src="assets/rfid1.jpg"
+        alt="Smart Drawer Lock project setup"
+        loading="lazy"
+      >
+    </a>
+
+    <a
+      href="assets/rfid2.jpg"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img
+        src="assets/rfid2.jpg"
+        alt="Arduino Uno and components of the Smart Drawer Lock"
+        loading="lazy"
+      >
+    </a>
+
+    <a
+      href="assets/rfid3.jpg"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img
+        src="assets/rfid3.jpg"
+        alt="Smart Drawer Lock prototype"
+        loading="lazy"
+      >
+    </a>
+  </div>
+
+  <p>
+    An RFID-based drawer access-control prototype built with
+    an Arduino Uno. The RFID-RC522 reader checks a presented
+    tag, and a servo motor operates the locking mechanism
+    when an authorized tag is recognized. A 16 × 2 LCD
+    provides access-status feedback.
+  </p>
+
+  <p>
+    Designed to provide convenient, keyless access while
+    keeping the drawer locked when an unrecognized tag
+    is presented.
+  </p>
+
+  <ul class="tags" aria-label="Hardware components">
+    <li>Arduino Uno</li>
+    <li>RFID-RC522</li>
+    <li>Servo Motor</li>
+    <li>16 × 2 LCD</li>
+  </ul>
+</article>
+
   <!-- Android attendance application -->
   <article class="card">
     <p class="eyebrow">ANDROID PROJECT</p>
@@ -319,7 +387,153 @@
     </ul>
   </article>
 </section>
+<!-- Tech Stack -->
+<section id="tech-stack" aria-labelledby="tech-stack-title">
+  <h2 id="tech-stack-title">Tech Stack</h2>
 
+  <!-- Reusable icons -->
+  <svg
+    class="tech-icon-definitions"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+  >
+    <defs>
+      <symbol id="tech-code" viewBox="0 0 24 24">
+        <path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/>
+      </symbol>
+
+      <symbol id="tech-web" viewBox="0 0 24 24">
+        <rect x="3" y="4" width="18" height="16" rx="2"/>
+        <path d="M3 9h18M7 6.5h.01M10 6.5h.01m0 6-3 2 3 2m4-4 3 2-3 2"/>
+      </symbol>
+
+      <symbol id="tech-palette" viewBox="0 0 24 24">
+        <path d="M12 3a9 9 0 1 0 0 18h1a2 2 0 0 0 1.5-3.3
+                 1.5 1.5 0 0 1 1.1-2.5H18A3 3 0 0 0 21 12
+                 a9 9 0 0 0-9-9Z"/>
+        <circle cx="7.5" cy="10" r=".8"/>
+        <circle cx="10" cy="6.8" r=".8"/>
+        <circle cx="14" cy="6.8" r=".8"/>
+        <circle cx="17" cy="10" r=".8"/>
+      </symbol>
+
+      <symbol id="tech-diagram" viewBox="0 0 24 24">
+        <rect x="8" y="3" width="8" height="5" rx="1"/>
+        <rect x="2" y="16" width="7" height="5" rx="1"/>
+        <rect x="15" y="16" width="7" height="5" rx="1"/>
+        <path d="M12 8v4M5.5 16v-4h13v4"/>
+      </symbol>
+
+      <symbol id="tech-circuit" viewBox="0 0 24 24">
+        <rect x="7" y="7" width="10" height="10" rx="2"/>
+        <path d="M10 3v4M14 3v4M10 17v4M14 17v4
+                 M3 10h4M3 14h4M17 10h4M17 14h4"/>
+        <path d="M10 10h4v4h-4z"/>
+      </symbol>
+
+      <symbol id="tech-workspace" viewBox="0 0 24 24">
+        <rect x="3" y="3" width="7" height="7" rx="1"/>
+        <rect x="14" y="3" width="7" height="7" rx="1"/>
+        <rect x="3" y="14" width="7" height="7" rx="1"/>
+        <rect x="14" y="14" width="7" height="7" rx="1"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <div class="tech-group">
+    <h3>Programming Languages</h3>
+
+    <ul class="tech-list">
+      <li>
+        <svg class="tech-icon" aria-hidden="true">
+          <use href="#tech-code"></use>
+        </svg>
+        <span>C</span>
+      </li>
+
+      <li>
+        <svg class="tech-icon" aria-hidden="true">
+          <use href="#tech-code"></use>
+        </svg>
+        <span>C++</span>
+      </li>
+
+      <li>
+        <svg class="tech-icon" aria-hidden="true">
+          <use href="#tech-code"></use>
+        </svg>
+        <span>Java</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="tech-group">
+    <h3>Web Development</h3>
+
+    <ul class="tech-list">
+      <li>
+        <svg class="tech-icon" aria-hidden="true">
+          <use href="#tech-web"></use>
+        </svg>
+        <span>HTML</span>
+      </li>
+
+      <li>
+        <svg class="tech-icon" aria-hidden="true">
+          <use href="#tech-palette"></use>
+        </svg>
+        <span>CSS</span>
+      </li>
+
+      <li>
+        <svg class="tech-icon" aria-hidden="true">
+          <use href="#tech-code"></use>
+        </svg>
+        <span>JavaScript</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="tech-group">
+    <h3>Design and Diagramming</h3>
+
+    <ul class="tech-list">
+      <li>
+        <svg class="tech-icon" aria-hidden="true">
+          <use href="#tech-diagram"></use>
+        </svg>
+        <span>Draw.io</span>
+      </li>
+
+      <li>
+        <svg class="tech-icon" aria-hidden="true">
+          <use href="#tech-palette"></use>
+        </svg>
+        <span>Canva</span>
+      </li>
+
+      <li>
+        <svg class="tech-icon" aria-hidden="true">
+          <use href="#tech-circuit"></use>
+        </svg>
+        <span>Fritzing</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="tech-group">
+    <h3>Productivity and Collaboration</h3>
+
+    <ul class="tech-list">
+      <li>
+        <svg class="tech-icon" aria-hidden="true">
+          <use href="#tech-workspace"></use>
+        </svg>
+        <span>Google Workspace</span>
+      </li>
+    </ul>
+  </div>
+</section>
            <section id="contact" aria-labelledby="contact-title">
   <h2 id="contact-title">Contact</h2>
 
