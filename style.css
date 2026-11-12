@@ -507,3 +507,24 @@ footer a {
 .certificate-link:hover .ccna-certificate {
   border-color: var(--accent);
 }
+/* Keep the content column within the layout */
+.layout > main {
+  min-width: 0;
+}
+
+/* Smaller certificate preview */
+.certificate-link {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  margin: 20px auto 24px;
+}
+
+.certificate-link .ccna-certificate {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 8px;
+}
