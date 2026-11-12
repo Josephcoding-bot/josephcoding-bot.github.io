@@ -489,3 +489,21 @@ footer a {
 #tech-stack-title {
   font-weight: 900;
 }
+/* CCNA course completion certificate */
+.certificate-link {
+  display: block;
+  margin: 20px 0 24px;
+  border-radius: 8px;
+}
+
+.ccna-certificate {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 8px;
+}
+
+.certificate-link:hover .ccna-certificate {
+  border-color: var(--accent);
+}
