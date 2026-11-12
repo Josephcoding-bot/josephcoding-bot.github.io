@@ -506,3 +506,98 @@ footer a {
   border: 1px solid rgba(148, 163, 184, 0.2);
   border-radius: 8px;
 }
+/* Photo beside the name */
+.profile-heading {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 12px 0 20px;
+}
+
+.profile-heading h1 {
+  min-width: 0;
+  margin: 0;
+  font-size: clamp(30px, 3vw, 44px);
+  line-height: 1.12;
+  letter-spacing: -1.2px;
+}
+
+/* Circular frame with a teal glow */
+.portrait-frame {
+  position: relative;
+  flex: 0 0 104px;
+  width: 104px;
+  height: 104px;
+  overflow: hidden;
+  border: 3px solid var(--accent);
+  border-radius: 50%;
+  background: var(--background);
+  box-shadow: 0 0 20px rgba(94, 234, 212, 0.18);
+}
+
+/* Zoom and position this full-body photo around your face */
+.profile-portrait {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 300%;
+  max-width: none;
+  height: auto;
+  transform: translate(-50%, -42%);
+}
+
+.portrait-frame:hover {
+  box-shadow: 0 0 30px rgba(94, 234, 212, 0.4);
+}
+
+/* Gentle movement for visitors who allow animation */
+@media (prefers-reduced-motion: no-preference) {
+  .portrait-frame {
+    transition: transform 220ms ease, box-shadow 220ms ease;
+  }
+
+  .portrait-frame:hover {
+    transform: translateY(-3px) scale(1.03);
+  }
+}
+
+/* Keep the photo beside your name on small screens */
+@media (max-width: 480px) {
+  .profile-heading {
+    gap: 14px;
+  }
+
+  .portrait-frame {
+    flex-basis: 76px;
+    width: 76px;
+    height: 76px;
+  }
+
+  .profile-heading h1 {
+    font-size: 30px;
+    letter-spacing: -1px;
+  }
+}
+/* Thin border and softer glow */
+.portrait-frame {
+  border: 1px solid var(--accent);
+  box-shadow: 0 0 12px rgba(94, 234, 212, 0.12);
+}
+
+/* Show the new portrait without excessive zoom */
+.portrait-frame .profile-portrait {
+  position: static;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform: none;
+}
+
+/* Subtle hover glow */
+.portrait-frame:hover {
+  box-shadow: 0 0 18px rgba(94, 234, 212, 0.25);
+}
